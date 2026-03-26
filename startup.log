@@ -1,0 +1,875 @@
+日志写入：/content/log/run_colab_20260326_045829.log
+[1/4] 检查并安装 Colab 基础依赖...
+W: Skipping acquire of configured file 'main/source/Sources' as repository 'https://r2u.stat.illinois.edu/ubuntu jammy InRelease' does not seem to provide it (sources.list entry misspelt?)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.1/98.1 kB 8.7 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.5/24.5 MB 122.5 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.6/114.6 kB 14.2 MB/s eta 0:00:00
+
+[2/4] 获取 SGLang (minicpm_sala 分支)...
+Cloning into 'sglang'...
+
+[3/4] 检查环境与编译状态...
+检测到尚未安装 sglang 环境。
+============================================
+ MiniCPM-SALA Colab Installation (Clean Version)
+============================================
+Submodule '3rdparty/infllmv2_cuda_impl' (https://github.com/OpenBMB/infllmv2_cuda_impl.git) registered for path '3rdparty/infllmv2_cuda_impl'
+Submodule '3rdparty/sparse_kernel' (https://github.com/OpenBMB/sparse_kernel.git) registered for path '3rdparty/sparse_kernel'
+Cloning into '/content/soar/sglang/3rdparty/infllmv2_cuda_impl'...
+Cloning into '/content/soar/sglang/3rdparty/sparse_kernel'...
+Submodule path '3rdparty/infllmv2_cuda_impl': checked out 'ed98dfc9c14bec7ecdb504eccb4f952695551bc2'
+Submodule 'csrc/cutlass' (https://github.com/NVIDIA/cutlass.git) registered for path '3rdparty/infllmv2_cuda_impl/csrc/cutlass'
+Cloning into '/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/cutlass'...
+Submodule path '3rdparty/infllmv2_cuda_impl/csrc/cutlass': checked out '4c42f73fdab5787e3bb57717f35a8cb1b3c0dc6d'
+Submodule path '3rdparty/sparse_kernel': checked out 'd7c367eb51ba56ac30d4a015ef5eee4da8d68736'
+[1/4] Installing sglang...
+Using Python 3.12.13 environment at: /usr
+Checked 1 package in 107ms
+Using Python 3.12.13 environment at: /usr
+Resolved 4 packages in 116ms
+Downloading pip (1.7MiB)
+ Downloaded pip
+Prepared 2 packages in 67ms
+Uninstalled 2 packages in 59ms
+Installed 2 packages in 14ms
+ - pip==24.1.2
+ + pip==26.0.1
+ - setuptools==75.2.0
+ + setuptools==82.0.1
+Using Python 3.12.13 environment at: /usr
+Resolved 161 packages in 3.42s
+   Building sglang @ file:///content/soar/sglang/python
+Downloading grpcio-tools (2.5MiB)
+Downloading timm (2.4MiB)
+Downloading torchcodec (1.8MiB)
+Downloading modelscope (5.8MiB)
+Downloading jedi (1.5MiB)
+Downloading py-spy (2.6MiB)
+Downloading nvidia-cutlass-dsl (59.3MiB)
+Downloading sgl-kernel (510.8MiB)
+Downloading grpcio (6.1MiB)
+Downloading xgrammar (8.5MiB)
+Downloading torchvision (7.7MiB)
+Downloading flashinfer-cubin (98.8MiB)
+Downloading torchaudio (2.0MiB)
+Downloading pycountry (7.7MiB)
+Downloading flashinfer-python (6.7MiB)
+Downloading hf-transfer (3.4MiB)
+Downloading openai-harmony (2.9MiB)
+Downloading decord2 (26.1MiB)
+Downloading llguidance (14.3MiB)
+Downloading transformers (11.4MiB)
+Downloading torchao (5.4MiB)
+Downloading apache-tvm-ffi (2.2MiB)
+Downloading nvidia-cudnn-frontend (2.7MiB)
+Downloading torch (858.1MiB)
+Downloading triton (162.6MiB)
+Downloading nvidia-nvshmem-cu12 (118.9MiB)
+ Downloaded torchcodec
+ Downloaded torchaudio
+ Downloaded apache-tvm-ffi
+ Downloaded py-spy
+ Downloaded timm
+ Downloaded grpcio-tools
+ Downloaded nvidia-cudnn-frontend
+ Downloaded openai-harmony
+ Downloaded hf-transfer
+      Built sglang @ file:///content/soar/sglang/python
+ Downloaded torchao
+ Downloaded grpcio
+ Downloaded torchvision
+ Downloaded pycountry
+ Downloaded xgrammar
+ Downloaded jedi
+ Downloaded flashinfer-python
+ Downloaded llguidance
+ Downloaded transformers
+ Downloaded decord2
+ Downloaded modelscope
+ Downloaded nvidia-cutlass-dsl
+ Downloaded nvidia-nvshmem-cu12
+ Downloaded triton
+ Downloaded sgl-kernel
+ Downloaded flashinfer-cubin
+ Downloaded torch
+Prepared 50 packages in 20.97s
+Uninstalled 14 packages in 1.25s
+Installed 50 packages in 292ms
+ + airportsdata==20260315
+ + anthropic==0.86.0
+ + apache-tvm-ffi==0.1.9
+ - blobfile==3.2.0
+ + blobfile==3.0.0
+ + build==1.4.2
+ + compressed-tensors==0.14.0.1
+ + decord2==3.2.0
+ + diskcache==5.6.3
+ + flashinfer-cubin==0.5.3
+ + flashinfer-python==0.5.3
+ + gguf==0.18.0
+ - grpcio==1.78.0
+ + grpcio==1.75.1
+ + grpcio-health-checking==1.75.1
+ + grpcio-reflection==1.75.1
+ + grpcio-tools==1.75.1
+ + hf-transfer==0.1.9
+ - huggingface-hub==1.7.1
+ + huggingface-hub==0.36.2
+ + interegular==0.3.3
+ + jedi==0.19.2
+ + llguidance==0.7.30
+ + loguru==0.7.3
+ + modelscope==1.35.1
+ + msgspec==0.20.0
+ + ninja==1.13.0
+ + nvidia-cudnn-frontend==1.21.0
+ + nvidia-cutlass-dsl==4.2.1
+ - nvidia-nvshmem-cu12==3.4.5
+ + nvidia-nvshmem-cu12==3.3.20
+ - openai==2.28.0
+ + openai==2.6.1
+ + openai-harmony==0.0.4
+ + outlines==0.1.11
+ + outlines-core==0.1.26
+ + partial-json-parser==0.2.1.1.post7
+ - protobuf==5.29.6
+ + protobuf==6.33.6
+ + py-spy==0.4.1
+ + pybase64==1.4.3
+ + pycountry==26.2.16
+ + pyproject-hooks==1.2.0
+ + setproctitle==1.3.7
+ + sgl-kernel==0.3.20
+ + sglang==0.0.0.dev8761+ga2d3bcea9 (from file:///content/soar/sglang/python)
+ - timm==1.0.25
+ + timm==1.0.16
+ - torch==2.10.0+cu128
+ + torch==2.9.1
+ + torch-memory-saver==0.0.9
+ - torchao==0.10.0
+ + torchao==0.9.0
+ - torchaudio==2.10.0+cu128
+ + torchaudio==2.9.1
+ - torchcodec==0.10.0+cu128
+ + torchcodec==0.8.0
+ - torchvision==0.25.0+cu128
+ + torchvision==0.24.1
+ - transformers==5.0.0
+ + transformers==4.57.1
+ - triton==3.6.0
+ + triton==3.5.1
+ + xgrammar==0.1.27
+Using Python 3.12.13 environment at: /usr
+Resolved 1 package in 62ms
+Prepared 1 package in 41ms
+Uninstalled 1 package in 1ms
+Installed 1 package in 3ms
+ - protobuf==6.33.6
+ + protobuf==5.29.6
+[2/4] Building CUDA kernels...
+  - Installing infllm_v2...
+
+
+torch.__version__  = 2.9.1+cu128
+
+
+running install
+/usr/local/lib/python3.12/dist-packages/setuptools/_distutils/cmd.py:90: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        This deprecation is overdue, please update your project and remove deprecated
+        calls to avoid build errors in the future.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build
+running build_py
+creating build/lib.linux-x86_64-cpython-312/infllm_v2
+copying infllm_v2/blockmask_to_uint64.py -> build/lib.linux-x86_64-cpython-312/infllm_v2
+copying infllm_v2/uint64_to_bool.py -> build/lib.linux-x86_64-cpython-312/infllm_v2
+copying infllm_v2/max_pooling_1d.py -> build/lib.linux-x86_64-cpython-312/infllm_v2
+copying infllm_v2/infllmv2_sparse_attention.py -> build/lib.linux-x86_64-cpython-312/infllm_v2
+copying infllm_v2/topk_to_uint64.py -> build/lib.linux-x86_64-cpython-312/infllm_v2
+copying infllm_v2/__init__.py -> build/lib.linux-x86_64-cpython-312/infllm_v2
+running build_ext
+W0326 04:59:36.829000 19482 torch/utils/cpp_extension.py:531] There are no x86_64-linux-gnu-g++ version bounds defined for CUDA version 12.8
+building 'infllm_v2.C' extension
+creating /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc
+creating /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn
+creating /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src
+[1/14] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/entry.o.d -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/cutlass/include -I/usr/local/lib/python3.12/dist-packages/torch/include -I/usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/usr/include/python3.12 -c -c /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/entry.cu -o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/entry.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -DFLASHATTENTION_DISABLE_DROPOUT -DFLASHATTENTION_DISABLE_ALIBI -DFLASHATTENTION_DISABLE_SOFTCAP -DFLASHATTENTION_DISABLE_UNEVEN_K -DFLASHATTENTION_DISABLE_LOCAL -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 -gencode arch=compute_120,code=sm_120 --threads 8 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=C
+[2/14] c++ -MMD -MF /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/flash_api.o.d -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/cutlass/include -I/usr/local/lib/python3.12/dist-packages/torch/include -I/usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/usr/include/python3.12 -c -c /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/flash_api.cpp -o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/flash_api.o -O3 -std=c++17 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=C
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/flash_api.cpp: In function ‘std::vector<at::Tensor> mha_fwd(at::Tensor&, const at::Tensor&, const at::Tensor&, std::optional<at::Tensor>&, std::optional<at::Tensor>&, float, float, bool, int, int, float, bool, std::optional<at::Generator>)’:
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/flash_api.cpp:368:10: warning: unused variable ‘is_sm8x’ [-Wunused-variable]
+  368 |     bool is_sm8x = cc_major == 8 && cc_minor >= 0;
+      |          ^~~~~~~
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/flash_api.cpp:369:10: warning: unused variable ‘is_sm90’ [-Wunused-variable]
+  369 |     bool is_sm90 = cc_major == 9 && cc_minor == 0;
+      |          ^~~~~~~
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/flash_api.cpp: In function ‘std::vector<at::Tensor> mha_varlen_fwd(at::Tensor&, const at::Tensor&, const at::Tensor&, std::optional<at::Tensor>&, const at::Tensor&, const at::Tensor&, std::optional<at::Tensor>&, std::optional<const at::Tensor>&, std::optional<at::Tensor>&, std::optional<at::Tensor>&, int, int, float, float, bool, bool, int, int, float, bool, std::optional<at::Generator>, std::optional<at::Tensor>&)’:
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/flash_api.cpp:548:10: warning: unused variable ‘is_sm8x’ [-Wunused-variable]
+  548 |     bool is_sm8x = cc_major == 8 && cc_minor >= 0;
+      |          ^~~~~~~
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/flash_api.cpp:549:10: warning: unused variable ‘is_sm90’ [-Wunused-variable]
+  549 |     bool is_sm90 = cc_major == 9 && cc_minor == 0;
+      |          ^~~~~~~
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/flash_api.cpp: In function ‘std::vector<at::Tensor> mha_varlen_fwd_stage1(at::Tensor&, const at::Tensor&, const at::Tensor&, std::optional<at::Tensor>&, const at::Tensor&, const at::Tensor&, const at::Tensor&, std::optional<at::Tensor>&, std::optional<const at::Tensor>&, std::optional<at::Tensor>&, std::optional<at::Tensor>&, int, int, float, float, bool, bool, int, int, float, bool, std::optional<at::Generator>)’:
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/flash_api.cpp:813:10: warning: unused variable ‘is_sm8x’ [-Wunused-variable]
+  813 |     bool is_sm8x = cc_major == 8 && cc_minor >= 0;
+      |          ^~~~~~~
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/flash_api.cpp:814:10: warning: unused variable ‘is_sm90’ [-Wunused-variable]
+  814 |     bool is_sm90 = cc_major == 9 && cc_minor == 0;
+      |          ^~~~~~~
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/flash_api.cpp: In function ‘std::vector<at::Tensor> mha_bwd(const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, std::optional<at::Tensor>&, std::optional<at::Tensor>&, std::optional<at::Tensor>&, std::optional<at::Tensor>&, float, float, bool, int, int, float, bool, std::optional<at::Generator>, std::optional<at::Tensor>&)’:
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/flash_api.cpp:1092:10: warning: unused variable ‘is_sm8x’ [-Wunused-variable]
+ 1092 |     bool is_sm8x = cc_major == 8 && cc_minor >= 0;
+      |          ^~~~~~~
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/flash_api.cpp: In function ‘std::vector<at::Tensor> mha_varlen_bwd(const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, std::optional<at::Tensor>&, std::optional<at::Tensor>&, std::optional<at::Tensor>&, const at::Tensor&, const at::Tensor&, std::optional<at::Tensor>&, int, int, float, float, bool, bool, int, int, float, bool, std::optional<at::Tensor>&, std::optional<at::Generator>, std::optional<at::Tensor>&)’:
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/flash_api.cpp:1315:10: warning: unused variable ‘is_sm8x’ [-Wunused-variable]
+ 1315 |     bool is_sm8x = cc_major == 8 && cc_minor >= 0;
+      |          ^~~~~~~
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/flash_api.cpp: In function ‘std::vector<at::Tensor> mha_fwd_kvcache(at::Tensor&, const at::Tensor&, const at::Tensor&, std::optional<const at::Tensor>&, std::optional<const at::Tensor>&, std::optional<const at::Tensor>&, std::optional<const at::Tensor>&, std::optional<const at::Tensor>&, std::optional<const at::Tensor>&, std::optional<const at::Tensor>&, std::optional<at::Tensor>&, std::optional<at::Tensor>&, std::optional<at::Tensor>&, float, bool, int, int, float, bool, int, std::optional<at::Tensor>&)’:
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/flash_api.cpp:1578:10: warning: unused variable ‘is_sm8x’ [-Wunused-variable]
+ 1578 |     bool is_sm8x = cc_major == 8 && cc_minor >= 0;
+      |          ^~~~~~~
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/flash_api.cpp:1579:10: warning: unused variable ‘is_sm90’ [-Wunused-variable]
+ 1579 |     bool is_sm90 = cc_major == 9 && cc_minor == 0;
+      |          ^~~~~~~
+[3/14] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_bwd_hdim128_bf16_causal_sm80.o.d -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/cutlass/include -I/usr/local/lib/python3.12/dist-packages/torch/include -I/usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/usr/include/python3.12 -c -c /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_bwd_hdim128_bf16_causal_sm80.cu -o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_bwd_hdim128_bf16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -DFLASHATTENTION_DISABLE_DROPOUT -DFLASHATTENTION_DISABLE_ALIBI -DFLASHATTENTION_DISABLE_SOFTCAP -DFLASHATTENTION_DISABLE_UNEVEN_K -DFLASHATTENTION_DISABLE_LOCAL -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 -gencode arch=compute_120,code=sm_120 --threads 8 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=C
+[4/14] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_bwd_hdim128_bf16_sm80.o.d -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/cutlass/include -I/usr/local/lib/python3.12/dist-packages/torch/include -I/usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/usr/include/python3.12 -c -c /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_bwd_hdim128_bf16_sm80.cu -o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_bwd_hdim128_bf16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -DFLASHATTENTION_DISABLE_DROPOUT -DFLASHATTENTION_DISABLE_ALIBI -DFLASHATTENTION_DISABLE_SOFTCAP -DFLASHATTENTION_DISABLE_UNEVEN_K -DFLASHATTENTION_DISABLE_LOCAL -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 -gencode arch=compute_120,code=sm_120 --threads 8 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=C
+[5/14] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_bwd_hdim64_bf16_causal_sm80.o.d -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/cutlass/include -I/usr/local/lib/python3.12/dist-packages/torch/include -I/usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/usr/include/python3.12 -c -c /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_bwd_hdim64_bf16_causal_sm80.cu -o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_bwd_hdim64_bf16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -DFLASHATTENTION_DISABLE_DROPOUT -DFLASHATTENTION_DISABLE_ALIBI -DFLASHATTENTION_DISABLE_SOFTCAP -DFLASHATTENTION_DISABLE_UNEVEN_K -DFLASHATTENTION_DISABLE_LOCAL -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 -gencode arch=compute_120,code=sm_120 --threads 8 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=C
+[6/14] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_bwd_hdim64_bf16_sm80.o.d -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/cutlass/include -I/usr/local/lib/python3.12/dist-packages/torch/include -I/usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/usr/include/python3.12 -c -c /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_bwd_hdim64_bf16_sm80.cu -o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_bwd_hdim64_bf16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -DFLASHATTENTION_DISABLE_DROPOUT -DFLASHATTENTION_DISABLE_ALIBI -DFLASHATTENTION_DISABLE_SOFTCAP -DFLASHATTENTION_DISABLE_UNEVEN_K -DFLASHATTENTION_DISABLE_LOCAL -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 -gencode arch=compute_120,code=sm_120 --threads 8 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=C
+[7/14] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_hdim128_bf16_causal_sm80.o.d -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/cutlass/include -I/usr/local/lib/python3.12/dist-packages/torch/include -I/usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/usr/include/python3.12 -c -c /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_hdim128_bf16_causal_sm80.cu -o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_hdim128_bf16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -DFLASHATTENTION_DISABLE_DROPOUT -DFLASHATTENTION_DISABLE_ALIBI -DFLASHATTENTION_DISABLE_SOFTCAP -DFLASHATTENTION_DISABLE_UNEVEN_K -DFLASHATTENTION_DISABLE_LOCAL -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 -gencode arch=compute_120,code=sm_120 --threads 8 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=C
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 1763 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 32 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_kernel<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false]" at line 73 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_fwd<Kernel_traits,Is_dropout,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true]" at line 296 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_hdim128<T,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Is_causal=true]" at line 9 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_hdim128_bf16_causal_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 1763 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 32 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_kernel<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false]" at line 73 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_fwd<Kernel_traits,Is_dropout,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true]" at line 296 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_hdim128<T,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Is_causal=true]" at line 9 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_hdim128_bf16_causal_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 1763 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 32 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_kernel<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false]" at line 73 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_fwd<Kernel_traits,Is_dropout,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true]" at line 296 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_hdim128<T,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Is_causal=true]" at line 9 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_hdim128_bf16_causal_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+[8/14] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_hdim128_bf16_sm80.o.d -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/cutlass/include -I/usr/local/lib/python3.12/dist-packages/torch/include -I/usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/usr/include/python3.12 -c -c /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_hdim128_bf16_sm80.cu -o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_hdim128_bf16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -DFLASHATTENTION_DISABLE_DROPOUT -DFLASHATTENTION_DISABLE_ALIBI -DFLASHATTENTION_DISABLE_SOFTCAP -DFLASHATTENTION_DISABLE_UNEVEN_K -DFLASHATTENTION_DISABLE_LOCAL -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 -gencode arch=compute_120,code=sm_120 --threads 8 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=C
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 1763 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 32 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_kernel<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false]" at line 73 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_fwd<Kernel_traits,Is_dropout,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false]" at line 296 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_hdim128<T,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Is_causal=false]" at line 9 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_hdim128_bf16_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 1763 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 32 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_kernel<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false]" at line 73 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_fwd<Kernel_traits,Is_dropout,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false]" at line 296 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_hdim128<T,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Is_causal=false]" at line 9 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_hdim128_bf16_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 1763 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 32 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_kernel<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false]" at line 73 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_fwd<Kernel_traits,Is_dropout,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false]" at line 296 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_hdim128<T,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Is_causal=false]" at line 9 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_hdim128_bf16_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+[9/14] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_hdim64_bf16_causal_sm80.o.d -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/cutlass/include -I/usr/local/lib/python3.12/dist-packages/torch/include -I/usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/usr/include/python3.12 -c -c /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_hdim64_bf16_causal_sm80.cu -o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_hdim64_bf16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -DFLASHATTENTION_DISABLE_DROPOUT -DFLASHATTENTION_DISABLE_ALIBI -DFLASHATTENTION_DISABLE_SOFTCAP -DFLASHATTENTION_DISABLE_UNEVEN_K -DFLASHATTENTION_DISABLE_LOCAL -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 -gencode arch=compute_120,code=sm_120 --threads 8 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=C
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 1763 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 32 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_kernel<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false]" at line 73 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_fwd<Kernel_traits,Is_dropout,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true]" at line 250 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_hdim64<T,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Is_causal=true]" at line 9 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_hdim64_bf16_causal_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 1763 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 32 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_kernel<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false]" at line 73 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_fwd<Kernel_traits,Is_dropout,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true]" at line 250 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_hdim64<T,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Is_causal=true]" at line 9 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_hdim64_bf16_causal_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 1763 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 32 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_kernel<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false]" at line 73 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_fwd<Kernel_traits,Is_dropout,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=true]" at line 250 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_hdim64<T,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Is_causal=true]" at line 9 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_hdim64_bf16_causal_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+[10/14] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_hdim64_bf16_sm80.o.d -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/cutlass/include -I/usr/local/lib/python3.12/dist-packages/torch/include -I/usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/usr/include/python3.12 -c -c /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_hdim64_bf16_sm80.cu -o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_hdim64_bf16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -DFLASHATTENTION_DISABLE_DROPOUT -DFLASHATTENTION_DISABLE_ALIBI -DFLASHATTENTION_DISABLE_SOFTCAP -DFLASHATTENTION_DISABLE_UNEVEN_K -DFLASHATTENTION_DISABLE_LOCAL -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 -gencode arch=compute_120,code=sm_120 --threads 8 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=C
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 1763 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 32 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_kernel<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false]" at line 73 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_fwd<Kernel_traits,Is_dropout,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false]" at line 250 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_hdim64<T,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Is_causal=false]" at line 9 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_hdim64_bf16_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 1763 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 32 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_kernel<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false]" at line 73 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_fwd<Kernel_traits,Is_dropout,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false]" at line 250 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_hdim64<T,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Is_causal=false]" at line 9 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_hdim64_bf16_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 1763 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false, Params=Flash_fwd_params]" at line 32 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_kernel<Kernel_traits,Is_dropout,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Return_softmax>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Return_softmax=false]" at line 73 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_fwd<Kernel_traits,Is_dropout,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_dropout=false, Is_causal=false]" at line 250 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_hdim64<T,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Is_causal=false]" at line 9 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_hdim64_bf16_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+[11/14] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_causal_sm80.o.d -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/cutlass/include -I/usr/local/lib/python3.12/dist-packages/torch/include -I/usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/usr/include/python3.12 -c -c /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_causal_sm80.cu -o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -DFLASHATTENTION_DISABLE_DROPOUT -DFLASHATTENTION_DISABLE_ALIBI -DFLASHATTENTION_DISABLE_SOFTCAP -DFLASHATTENTION_DISABLE_UNEVEN_K -DFLASHATTENTION_DISABLE_LOCAL -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 -gencode arch=compute_120,code=sm_120 --threads 8 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=C
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 1777 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 40 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true]" at line 119 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=true]" at line 224 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=128, Is_causal=true]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_causal_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/mask.h(276): warning #177-D: variable "compressed_row_idx" was declared but never referenced
+                          const int compressed_row_idx = (orig_row_idx - stride + 1) / stride;
+                                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 1789 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 48 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_stage1_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false]" at line 184 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd_stage1<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true]" at line 226 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=128, Is_causal=true]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_causal_sm80.cu
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 1777 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 40 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true]" at line 119 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=true]" at line 224 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=128, Is_causal=true]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_causal_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/mask.h(276): warning #177-D: variable "compressed_row_idx" was declared but never referenced
+                          const int compressed_row_idx = (orig_row_idx - stride + 1) / stride;
+                                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 1789 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 48 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_stage1_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false]" at line 184 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd_stage1<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true]" at line 226 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=128, Is_causal=true]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_causal_sm80.cu
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 1777 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 40 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true]" at line 119 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=true]" at line 224 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=128, Is_causal=true]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_causal_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/mask.h(276): warning #177-D: variable "compressed_row_idx" was declared but never referenced
+                          const int compressed_row_idx = (orig_row_idx - stride + 1) / stride;
+                                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 1789 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 48 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_stage1_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false]" at line 184 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd_stage1<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true]" at line 226 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=128, Is_causal=true]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_causal_sm80.cu
+
+[12/14] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_sm80.o.d -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/cutlass/include -I/usr/local/lib/python3.12/dist-packages/torch/include -I/usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/usr/include/python3.12 -c -c /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_sm80.cu -o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -DFLASHATTENTION_DISABLE_DROPOUT -DFLASHATTENTION_DISABLE_ALIBI -DFLASHATTENTION_DISABLE_SOFTCAP -DFLASHATTENTION_DISABLE_UNEVEN_K -DFLASHATTENTION_DISABLE_LOCAL -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 -gencode arch=compute_120,code=sm_120 --threads 8 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=C
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 1777 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 40 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true]" at line 119 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=false]" at line 224 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=128, Is_causal=false]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/mask.h(276): warning #177-D: variable "compressed_row_idx" was declared but never referenced
+                          const int compressed_row_idx = (orig_row_idx - stride + 1) / stride;
+                                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 1789 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 48 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_stage1_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false]" at line 184 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd_stage1<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false]" at line 226 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=128, Is_causal=false]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_sm80.cu
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 1777 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 40 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true]" at line 119 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=false]" at line 224 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=128, Is_causal=false]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/mask.h(276): warning #177-D: variable "compressed_row_idx" was declared but never referenced
+                          const int compressed_row_idx = (orig_row_idx - stride + 1) / stride;
+                                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 1789 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 48 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_stage1_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false]" at line 184 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd_stage1<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false]" at line 226 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=128, Is_causal=false]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_sm80.cu
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 1777 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 40 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true]" at line 119 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 64, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 64, 128, 4, cutlass::bfloat16_t>>, Is_causal=false]" at line 224 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=128, Is_causal=false]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/mask.h(276): warning #177-D: variable "compressed_row_idx" was declared but never referenced
+                          const int compressed_row_idx = (orig_row_idx - stride + 1) / stride;
+                                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 1789 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 48 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_stage1_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false]" at line 184 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd_stage1<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<128, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<128, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false]" at line 226 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=128, Is_causal=false]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_sm80.cu
+
+[13/14] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_causal_sm80.o.d -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/cutlass/include -I/usr/local/lib/python3.12/dist-packages/torch/include -I/usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/usr/include/python3.12 -c -c /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_causal_sm80.cu -o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -DFLASHATTENTION_DISABLE_DROPOUT -DFLASHATTENTION_DISABLE_ALIBI -DFLASHATTENTION_DISABLE_SOFTCAP -DFLASHATTENTION_DISABLE_UNEVEN_K -DFLASHATTENTION_DISABLE_LOCAL -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 -gencode arch=compute_120,code=sm_120 --threads 8 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=C
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 1777 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 40 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true]" at line 119 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=true]" at line 224 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=64, Is_causal=true]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_causal_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/mask.h(276): warning #177-D: variable "compressed_row_idx" was declared but never referenced
+                          const int compressed_row_idx = (orig_row_idx - stride + 1) / stride;
+                                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 1789 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 48 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_stage1_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false]" at line 184 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd_stage1<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true]" at line 226 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=64, Is_causal=true]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_causal_sm80.cu
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 1777 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 40 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true]" at line 119 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=true]" at line 224 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=64, Is_causal=true]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_causal_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/mask.h(276): warning #177-D: variable "compressed_row_idx" was declared but never referenced
+                          const int compressed_row_idx = (orig_row_idx - stride + 1) / stride;
+                                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 1789 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 48 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_stage1_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false]" at line 184 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd_stage1<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true]" at line 226 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=64, Is_causal=true]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_causal_sm80.cu
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 1777 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 40 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true]" at line 119 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=true]" at line 224 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=64, Is_causal=true]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_causal_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/mask.h(276): warning #177-D: variable "compressed_row_idx" was declared but never referenced
+                          const int compressed_row_idx = (orig_row_idx - stride + 1) / stride;
+                                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 1789 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 48 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_stage1_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false]" at line 184 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd_stage1<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=true]" at line 226 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=64, Is_causal=true]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_causal_sm80.cu
+
+[14/14] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_sm80.o.d -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src -I/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/cutlass/include -I/usr/local/lib/python3.12/dist-packages/torch/include -I/usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/usr/include/python3.12 -c -c /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_sm80.cu -o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -DFLASHATTENTION_DISABLE_DROPOUT -DFLASHATTENTION_DISABLE_ALIBI -DFLASHATTENTION_DISABLE_SOFTCAP -DFLASHATTENTION_DISABLE_UNEVEN_K -DFLASHATTENTION_DISABLE_LOCAL -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 -gencode arch=compute_120,code=sm_120 --threads 8 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=C
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 1777 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 40 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true]" at line 119 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=false]" at line 224 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=64, Is_causal=false]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/mask.h(276): warning #177-D: variable "compressed_row_idx" was declared but never referenced
+                          const int compressed_row_idx = (orig_row_idx - stride + 1) / stride;
+                                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 1789 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 48 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_stage1_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false]" at line 184 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd_stage1<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false]" at line 226 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=64, Is_causal=false]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_sm80.cu
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 1777 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 40 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true]" at line 119 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=false]" at line 224 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=64, Is_causal=false]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/mask.h(276): warning #177-D: variable "compressed_row_idx" was declared but never referenced
+                          const int compressed_row_idx = (orig_row_idx - stride + 1) / stride;
+                                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 1789 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 48 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_stage1_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false]" at line 184 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd_stage1<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false]" at line 226 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=64, Is_causal=false]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_sm80.cu
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_blockmask.h(35): warning #177-D: variable "q_block_idx" was declared but never referenced
+          const int q_block_idx = loop_step_idx + cache_seqlen_k;
+                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 1777 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true, Params=Flash_fwd_params]" at line 40 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=false, Is_even_K=true, Is_softcap=false, Split=true, Append_KV=true]" at line 119 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t>>, Is_causal=false]" at line 224 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=64, Is_causal=false]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_sm80.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/mask.h(276): warning #177-D: variable "compressed_row_idx" was declared but never referenced
+                          const int compressed_row_idx = (orig_row_idx - stride + 1) / stride;
+                                    ^
+          detected during:
+            instantiation of "void flash::compute_attn_1rowblock_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &, int, int, int, int, int) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 1789 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_kernel.h
+            instantiation of "void flash::compute_attn_splitkv_stage1<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV,Params>(const Params &) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false, Params=Flash_fwd_params]" at line 48 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void flash_fwd_splitkv_stage1_kernel<Kernel_traits,Is_causal,Is_local,Has_alibi,Is_even_MN,Is_even_K,Is_softcap,Split,Append_KV>(Flash_fwd_params) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false, Is_local=false, Has_alibi=false, Is_even_MN=true, Is_even_K=true, Is_softcap=false, Split=false, Append_KV=false]" at line 184 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_flash_splitkv_fwd_stage1<Kernel_traits,Is_causal>(Flash_fwd_params &, cudaStream_t) [with Kernel_traits=Flash_fwd_kernel_traits<64, 16, 64, 1, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 16, 64, 1, cutlass::bfloat16_t>>, Is_causal=false]" at line 226 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_launch_template.h
+            instantiation of "void run_mha_fwd_splitkv_dispatch<T,Headdim,Is_causal>(Flash_fwd_params &, cudaStream_t) [with T=cutlass::bfloat16_t, Headdim=64, Is_causal=false]" at line 7 of /content/soar/sglang/3rdparty/infllmv2_cuda_impl/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_sm80.cu
+
+x86_64-linux-gnu-g++ -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/entry.o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/flash_api.o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_bwd_hdim128_bf16_causal_sm80.o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_bwd_hdim128_bf16_sm80.o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_bwd_hdim64_bf16_causal_sm80.o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_bwd_hdim64_bf16_sm80.o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_hdim128_bf16_causal_sm80.o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_hdim128_bf16_sm80.o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_hdim64_bf16_causal_sm80.o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_hdim64_bf16_sm80.o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_causal_sm80.o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_split_hdim128_bf16_sm80.o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_causal_sm80.o /content/soar/sglang/3rdparty/infllmv2_cuda_impl/build/temp.linux-x86_64-cpython-312/csrc/flash_attn/src/flash_fwd_split_hdim64_bf16_sm80.o -L/usr/local/lib/python3.12/dist-packages/torch/lib -L/usr/local/cuda/lib64 -L/usr/lib/x86_64-linux-gnu -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda -o build/lib.linux-x86_64-cpython-312/infllm_v2/C.cpython-312-x86_64-linux-gnu.so
+running install_lib
+creating /usr/local/lib/python3.12/dist-packages/infllm_v2
+copying build/lib.linux-x86_64-cpython-312/infllm_v2/blockmask_to_uint64.py -> /usr/local/lib/python3.12/dist-packages/infllm_v2
+copying build/lib.linux-x86_64-cpython-312/infllm_v2/uint64_to_bool.py -> /usr/local/lib/python3.12/dist-packages/infllm_v2
+copying build/lib.linux-x86_64-cpython-312/infllm_v2/max_pooling_1d.py -> /usr/local/lib/python3.12/dist-packages/infllm_v2
+copying build/lib.linux-x86_64-cpython-312/infllm_v2/infllmv2_sparse_attention.py -> /usr/local/lib/python3.12/dist-packages/infllm_v2
+copying build/lib.linux-x86_64-cpython-312/infllm_v2/topk_to_uint64.py -> /usr/local/lib/python3.12/dist-packages/infllm_v2
+copying build/lib.linux-x86_64-cpython-312/infllm_v2/C.cpython-312-x86_64-linux-gnu.so -> /usr/local/lib/python3.12/dist-packages/infllm_v2
+copying build/lib.linux-x86_64-cpython-312/infllm_v2/__init__.py -> /usr/local/lib/python3.12/dist-packages/infllm_v2
+byte-compiling /usr/local/lib/python3.12/dist-packages/infllm_v2/blockmask_to_uint64.py to blockmask_to_uint64.cpython-312.pyc
+byte-compiling /usr/local/lib/python3.12/dist-packages/infllm_v2/uint64_to_bool.py to uint64_to_bool.cpython-312.pyc
+byte-compiling /usr/local/lib/python3.12/dist-packages/infllm_v2/max_pooling_1d.py to max_pooling_1d.cpython-312.pyc
+byte-compiling /usr/local/lib/python3.12/dist-packages/infllm_v2/infllmv2_sparse_attention.py to infllmv2_sparse_attention.cpython-312.pyc
+byte-compiling /usr/local/lib/python3.12/dist-packages/infllm_v2/topk_to_uint64.py to topk_to_uint64.cpython-312.pyc
+byte-compiling /usr/local/lib/python3.12/dist-packages/infllm_v2/__init__.py to __init__.cpython-312.pyc
+running install_egg_info
+running egg_info
+creating infllm_v2.egg-info
+writing infllm_v2.egg-info/PKG-INFO
+writing dependency_links to infllm_v2.egg-info/dependency_links.txt
+writing requirements to infllm_v2.egg-info/requires.txt
+writing top-level names to infllm_v2.egg-info/top_level.txt
+writing manifest file 'infllm_v2.egg-info/SOURCES.txt'
+reading manifest file 'infllm_v2.egg-info/SOURCES.txt'
+writing manifest file 'infllm_v2.egg-info/SOURCES.txt'
+Copying infllm_v2.egg-info to /usr/local/lib/python3.12/dist-packages/infllm_v2-0.0.0-py3.12.egg-info
+running install_scripts
+  - Installing sparse_kernel...
+running install
+/usr/local/lib/python3.12/dist-packages/setuptools/_distutils/cmd.py:90: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        This deprecation is overdue, please update your project and remove deprecated
+        calls to avoid build errors in the future.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running build
+running build_ext
+W0326 05:15:46.813000 24337 torch/utils/cpp_extension.py:531] There are no x86_64-linux-gnu-g++ version bounds defined for CUDA version 12.8
+building 'sparse_kernel_extension' extension
+creating /content/soar/sglang/3rdparty/sparse_kernel/build/temp.linux-x86_64-cpython-312
+[1/1] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /content/soar/sglang/3rdparty/sparse_kernel/build/temp.linux-x86_64-cpython-312/get_table_kernel.o.d -I/usr/local/lib/python3.12/dist-packages/torch/include -I/usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/usr/include/python3.12 -c -c /content/soar/sglang/3rdparty/sparse_kernel/get_table_kernel.cu -o /content/soar/sglang/3rdparty/sparse_kernel/build/temp.linux-x86_64-cpython-312/get_table_kernel.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 -gencode arch=compute_120,code=sm_120 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=sparse_kernel_extension -std=c++17
+/content/soar/sglang/3rdparty/sparse_kernel/get_table_kernel.cu(29): warning #177-D: variable "kBlockPerTokenHead" was declared but never referenced
+    constexpr int kBlockPerTokenHead = kSparseTopK / kTopkPerBlock;
+                  ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/sparse_kernel/get_table_kernel.cu(70): warning #177-D: variable "kBlockPerTokenHead" was declared but never referenced
+    constexpr int kBlockPerTokenHead = kSparseTopK / kTopkPerBlock;
+                  ^
+
+/content/soar/sglang/3rdparty/sparse_kernel/get_table_kernel.cu(29): warning #177-D: variable "kBlockPerTokenHead" was declared but never referenced
+    constexpr int kBlockPerTokenHead = kSparseTopK / kTopkPerBlock;
+                  ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/sparse_kernel/get_table_kernel.cu(70): warning #177-D: variable "kBlockPerTokenHead" was declared but never referenced
+    constexpr int kBlockPerTokenHead = kSparseTopK / kTopkPerBlock;
+                  ^
+
+/content/soar/sglang/3rdparty/sparse_kernel/get_table_kernel.cu(29): warning #177-D: variable "kBlockPerTokenHead" was declared but never referenced
+    constexpr int kBlockPerTokenHead = kSparseTopK / kTopkPerBlock;
+                  ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/soar/sglang/3rdparty/sparse_kernel/get_table_kernel.cu(70): warning #177-D: variable "kBlockPerTokenHead" was declared but never referenced
+    constexpr int kBlockPerTokenHead = kSparseTopK / kTopkPerBlock;
+                  ^
+
+creating build/lib.linux-x86_64-cpython-312
+x86_64-linux-gnu-g++ -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -g -fwrapv -O2 /content/soar/sglang/3rdparty/sparse_kernel/build/temp.linux-x86_64-cpython-312/get_table_kernel.o -L/usr/local/lib/python3.12/dist-packages/torch/lib -L/usr/local/cuda/lib64 -L/usr/lib/x86_64-linux-gnu -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda -o build/lib.linux-x86_64-cpython-312/sparse_kernel_extension.cpython-312-x86_64-linux-gnu.so
+running install_lib
+copying build/lib.linux-x86_64-cpython-312/sparse_kernel_extension.cpython-312-x86_64-linux-gnu.so -> /usr/local/lib/python3.12/dist-packages
+running install_egg_info
+running egg_info
+creating sparse_kernel_extension.egg-info
+writing sparse_kernel_extension.egg-info/PKG-INFO
+writing dependency_links to sparse_kernel_extension.egg-info/dependency_links.txt
+writing top-level names to sparse_kernel_extension.egg-info/top_level.txt
+writing manifest file 'sparse_kernel_extension.egg-info/SOURCES.txt'
+reading manifest file 'sparse_kernel_extension.egg-info/SOURCES.txt'
+writing manifest file 'sparse_kernel_extension.egg-info/SOURCES.txt'
+Copying sparse_kernel_extension.egg-info to /usr/local/lib/python3.12/dist-packages/sparse_kernel_extension-0.0.0-py3.12.egg-info
+running install_scripts
+[4/4] Installing additional libraries...
+Using Python 3.12.13 environment at: /usr
+Resolved 51 packages in 577ms
+Downloading z3-solver (27.9MiB)
+Downloading tilelang (41.5MiB)
+ Downloaded z3-solver
+ Downloaded tilelang
+Prepared 5 packages in 1.62s
+Installed 5 packages in 166ms
+ + fla-core==0.4.2
+ + flash-linear-attention==0.4.2
+ + tilelang==0.1.8
+ + torch-c-dlpack-ext==0.1.5
+ + z3-solver==4.15.4.0
+============================================
+ Installation complete for Colab!
+============================================
+
+[4/4] 准备启动 Baseline 推理服务...
+Using Python 3.12.13 environment at: /usr
+Resolved 18 packages in 83ms
+Prepared 5 packages in 16ms
+Uninstalled 3 packages in 5ms
+Installed 5 packages in 3ms
+ - fsspec==2025.3.0
+ + fsspec==2026.2.0
+ + inquirerpy==0.3.4
+ + pfzy==0.3.4
+ - requests==2.32.4
+ + requests==2.33.0
+ - urllib3==2.5.0
+ + urllib3==2.6.3
+==========================================
+正在启动 SGLang 推理框架 (MiniCPM-SALA 模式)...
+模型路径: /content/drive/MyDrive/models/MiniCPM-SALA
+赛题规则: 禁用 radix-cache
+配置: mem_fraction_static=0.90, kv_cache_dtype=bfloat16
+调度: max_running_requests=2, chunk_size=512
+==========================================
+清理残留的 sglang 进程...
+
+[GPU] 启动 SGLang 前最终检查
+0, NVIDIA L4, 0 MiB, 23034 MiB
+
+启动命令: python3 -m sglang.launch_server --model /content/drive/MyDrive/models/MiniCPM-SALA --trust-remote-code --disable-radix-cache --attention-backend minicpm_flashinfer --chunked-prefill-size 512 --mem-fraction-static 0.90 --max-running-requests 2 --kv-cache-dtype bfloat16 --skip-server-warmup --port 31111 --dense-as-sparse --disable-cuda-graph
+2026-03-26 05:17:56.587465: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-03-26 05:17:56.606898: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1774502276.629796   25002 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1774502276.639492   25002 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1774502276.657179   25002 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1774502276.657203   25002 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1774502276.657205   25002 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1774502276.657207   25002 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-03-26 05:17:56.662244: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[2026-03-26 05:18:01] INFO utils.py:164: NumExpr defaulting to 12 threads.
+[2026-03-26 05:18:14] server_args=ServerArgs(model_path='/content/drive/MyDrive/models/MiniCPM-SALA', tokenizer_path='/content/drive/MyDrive/models/MiniCPM-SALA', tokenizer_mode='auto', tokenizer_worker_num=1, skip_tokenizer_init=False, load_format='auto', model_loader_extra_config='{}', trust_remote_code=True, context_length=None, is_embedding=False, enable_multimodal=None, revision=None, model_impl='auto', host='127.0.0.1', port=31111, fastapi_root_path='', grpc_mode=False, skip_server_warmup=True, warmups=None, nccl_port=None, checkpoint_engine_wait_weights_before_ready=False, dtype='auto', quantization=None, quantization_param_path=None, kv_cache_dtype='bfloat16', enable_fp32_lm_head=False, modelopt_quant=None, modelopt_checkpoint_restore_path=None, modelopt_checkpoint_save_path=None, modelopt_export_path=None, quantize_and_serve=False, rl_quant_profile=None, mem_fraction_static=0.9, max_running_requests=2, max_queued_requests=None, max_total_tokens=None, chunked_prefill_size=512, enable_dynamic_chunking=False, max_prefill_tokens=16384, prefill_max_requests=None, schedule_policy='fcfs', enable_priority_scheduling=False, abort_on_priority_when_disabled=False, schedule_low_priority_values_first=False, priority_scheduling_preemption_threshold=10, schedule_conservativeness=1.0, page_size=1, swa_full_tokens_ratio=0.8, disable_hybrid_swa_memory=False, radix_eviction_policy='lru', device='cuda', tp_size=1, pp_size=1, pp_max_micro_batch_size=None, pp_async_batch_depth=0, stream_interval=1, stream_output=False, random_seed=984113610, constrained_json_whitespace_pattern=None, constrained_json_disable_any_whitespace=False, watchdog_timeout=300, soft_watchdog_timeout=None, dist_timeout=None, download_dir=None, base_gpu_id=0, gpu_id_step=1, sleep_on_idle=False, custom_sigquit_handler=None, log_level='info', log_level_http=None, log_requests=False, log_requests_level=2, log_requests_format='text', log_requests_target=None, crash_dump_folder=None, show_time_cost=False, enable_metrics=False, enable_metrics_for_all_schedulers=False, tokenizer_metrics_custom_labels_header='x-custom-labels', tokenizer_metrics_allowed_custom_labels=None, bucket_time_to_first_token=None, bucket_inter_token_latency=None, bucket_e2e_request_latency=None, collect_tokens_histogram=False, prompt_tokens_buckets=None, generation_tokens_buckets=None, gc_warning_threshold_secs=0.0, decode_log_interval=40, enable_request_time_stats_logging=False, kv_events_config=None, enable_trace=False, otlp_traces_endpoint='localhost:4317', export_metrics_to_file=False, export_metrics_to_file_dir=None, api_key=None, served_model_name='/content/drive/MyDrive/models/MiniCPM-SALA', weight_version='default', chat_template=None, completion_template=None, file_storage_path='sglang_storage', enable_cache_report=False, reasoning_parser=None, tool_call_parser=None, tool_server=None, sampling_defaults='model', dp_size=1, load_balance_method='round_robin', dist_init_addr=None, nnodes=1, node_rank=0, json_model_override_args='{}', preferred_sampling_params=None, enable_lora=None, max_lora_rank=None, lora_target_modules=None, lora_paths=None, max_loaded_loras=None, max_loras_per_batch=8, lora_eviction_policy='lru', lora_backend='csgmv', max_lora_chunk_size=16, attention_backend='minicpm_flashinfer', decode_attention_backend=None, prefill_attention_backend=None, sampling_backend='flashinfer', grammar_backend='xgrammar', mm_attention_backend=None, fp8_gemm_runner_backend='auto', nsa_prefill_backend='flashmla_sparse', nsa_decode_backend='fa3', disable_flashinfer_autotune=False, speculative_algorithm=None, speculative_draft_model_path=None, speculative_draft_model_revision=None, speculative_draft_load_format=None, speculative_num_steps=None, speculative_eagle_topk=None, speculative_num_draft_tokens=None, speculative_accept_threshold_single=1.0, speculative_accept_threshold_acc=1.0, speculative_token_map=None, speculative_attention_mode='prefill', speculative_draft_attention_backend=None, speculative_moe_runner_backend='auto', speculative_moe_a2a_backend=None, speculative_draft_model_quantization=None, speculative_ngram_min_match_window_size=1, speculative_ngram_max_match_window_size=12, speculative_ngram_min_bfs_breadth=1, speculative_ngram_max_bfs_breadth=10, speculative_ngram_match_type='BFS', speculative_ngram_branch_length=18, speculative_ngram_capacity=10000000, enable_multi_layer_eagle=False, ep_size=1, moe_a2a_backend='none', moe_runner_backend='auto', flashinfer_mxfp4_moe_precision='default', enable_flashinfer_allreduce_fusion=False, deepep_mode='auto', ep_num_redundant_experts=0, ep_dispatch_algorithm=None, init_expert_location='trivial', enable_eplb=False, eplb_algorithm='auto', eplb_rebalance_num_iterations=1000, eplb_rebalance_layers_per_chunk=None, eplb_min_rebalancing_utilization_threshold=1.0, expert_distribution_recorder_mode=None, expert_distribution_recorder_buffer_size=1000, enable_expert_distribution_metrics=False, deepep_config=None, moe_dense_tp_size=None, elastic_ep_backend=None, mooncake_ib_device=None, max_mamba_cache_size=None, mamba_ssm_dtype='float32', mamba_full_memory_ratio=0.9, mamba_scheduler_strategy='no_buffer', mamba_track_interval=256, enable_hierarchical_cache=False, hicache_ratio=2.0, hicache_size=0, hicache_write_policy='write_through', hicache_io_backend='kernel', hicache_mem_layout='layer_first', hicache_storage_backend=None, hicache_storage_prefetch_policy='best_effort', hicache_storage_backend_extra_config=None, hierarchical_sparse_attention_extra_config=None, enable_lmcache=False, kt_weight_path=None, kt_method='AMXINT4', kt_cpuinfer=None, kt_threadpool_count=2, kt_num_gpu_experts=None, kt_max_deferred_experts_per_token=None, dllm_algorithm=None, dllm_algorithm_config=None, enable_double_sparsity=False, ds_channel_config_path=None, ds_heavy_channel_num=32, ds_heavy_token_num=256, ds_heavy_channel_type='qk', ds_sparse_decode_threshold=4096, cpu_offload_gb=0, offload_group_size=-1, offload_num_in_group=1, offload_prefetch_step=1, offload_mode='cpu', multi_item_scoring_delimiter=None, disable_radix_cache=True, cuda_graph_max_bs=24, cuda_graph_bs=[1, 2, 4, 8, 12, 16, 24], disable_cuda_graph=True, disable_cuda_graph_padding=False, fuse_topk=False, split_stage1=False, dense_as_sparse=True, force_dense_minicpm=False, enable_profile_cuda_graph=False, enable_cudagraph_gc=False, enable_layerwise_nvtx_marker=False, enable_nccl_nvls=False, enable_symm_mem=False, disable_flashinfer_cutlass_moe_fp4_allgather=False, enable_tokenizer_batch_encode=False, disable_tokenizer_batch_decode=False, disable_outlines_disk_cache=False, disable_custom_all_reduce=False, enable_mscclpp=False, enable_torch_symm_mem=False, disable_overlap_schedule=False, enable_mixed_chunk=False, enable_dp_attention=False, enable_dp_lm_head=False, enable_two_batch_overlap=False, enable_single_batch_overlap=False, tbo_token_distribution_threshold=0.48, enable_torch_compile=False, enable_piecewise_cuda_graph=False, enable_torch_compile_debug_mode=False, torch_compile_max_bs=32, piecewise_cuda_graph_max_tokens=512, piecewise_cuda_graph_tokens=[4, 8, 12, 16, 20, 24, 28, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 256, 288, 320, 352, 384, 416, 448, 480, 512], piecewise_cuda_graph_compiler='eager', torchao_config='', enable_nan_detection=False, enable_p2p_check=False, triton_attention_reduce_in_fp32=False, triton_attention_num_kv_splits=8, triton_attention_split_tile_size=None, num_continuous_decode_steps=1, delete_ckpt_after_loading=False, enable_memory_saver=False, enable_weights_cpu_backup=False, enable_draft_weights_cpu_backup=False, allow_auto_truncate=False, enable_custom_logit_processor=False, flashinfer_mla_disable_ragged=False, disable_shared_experts_fusion=False, disable_chunked_prefix_cache=False, disable_fast_image_processor=False, keep_mm_feature_on_device=False, enable_return_hidden_states=False, enable_return_routed_experts=False, scheduler_recv_interval=1, numa_node=None, enable_deterministic_inference=False, rl_on_policy_target=None, enable_attn_tp_input_scattered=False, enable_nsa_prefill_context_parallel=False, nsa_prefill_cp_mode='in-seq-split', enable_fused_qk_norm_rope=False, enable_precise_embedding_interpolation=False, enable_dynamic_batch_tokenizer=False, dynamic_batch_tokenizer_batch_size=32, dynamic_batch_tokenizer_batch_timeout=0.002, debug_tensor_dump_output_folder=None, debug_tensor_dump_layers=None, debug_tensor_dump_input_file=None, debug_tensor_dump_inject=False, disaggregation_mode='null', disaggregation_transfer_backend='mooncake', disaggregation_bootstrap_port=8998, disaggregation_decode_tp=None, disaggregation_decode_dp=None, disaggregation_prefill_pp=1, disaggregation_ib_device=None, disaggregation_decode_enable_offload_kvcache=False, disaggregation_decode_enable_fake_auto=False, num_reserved_decode_tokens=512, disaggregation_decode_polling_interval=1, encoder_only=False, language_only=False, encoder_transfer_backend='zmq_to_scheduler', encoder_urls=[], custom_weight_loader=[], weight_loader_disable_mmap=False, remote_instance_weight_loader_seed_instance_ip=None, remote_instance_weight_loader_seed_instance_service_port=None, remote_instance_weight_loader_send_weights_group_ports=None, remote_instance_weight_loader_backend='nccl', remote_instance_weight_loader_start_seed_via_transfer_engine=False, enable_pdmux=False, pdmux_config_path=None, sm_group_num=8, mm_max_concurrent_calls=32, mm_per_request_timeout=10.0, enable_broadcast_mm_inputs_process=False, enable_prefix_mm_cache=False, mm_enable_dp_encoder=False, mm_process_config={}, limit_mm_data_per_request=None, decrypted_config_file=None, decrypted_draft_config_file=None, forward_hooks=None)
+[2026-03-26 05:18:20] Using default HuggingFace chat template with detected content format: string
+2026-03-26 05:18:20.618187: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-03-26 05:18:20.618269: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1774502300.640564   25196 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1774502300.640629   25195 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1774502300.649833   25196 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+E0000 00:00:1774502300.650043   25195 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1774502300.666325   25196 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1774502300.666357   25196 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1774502300.666360   25196 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1774502300.666361   25196 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1774502300.666492   25195 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1774502300.666520   25195 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1774502300.666522   25195 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1774502300.666524   25195 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+[2026-03-26 05:18:25] INFO utils.py:164: NumExpr defaulting to 12 threads.
+[2026-03-26 05:18:25] INFO utils.py:164: NumExpr defaulting to 12 threads.
+[2026-03-26 05:18:29] Init torch distributed begin.
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[2026-03-26 05:18:30] Init torch distributed ends. mem usage=0.00 GB
+[2026-03-26 05:18:30] MOE_RUNNER_BACKEND is not initialized, the backend will be automatically selected
+[2026-03-26 05:18:37] Ignore import error when loading sglang.srt.models.glmasr: cannot import name 'GlmAsrConfig' from 'transformers' (/usr/local/lib/python3.12/dist-packages/transformers/__init__.py)
+[2026-03-26 05:18:37] Load weight begin. avail mem=21.84 GB
+
+Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [02:02<06:07, 122.39s/it]
+
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [03:39<03:34, 107.46s/it]
+
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [05:33<01:50, 110.43s/it]
+
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [07:14<00:00, 106.93s/it]
+
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [07:14<00:00, 108.73s/it]
+
+[2026-03-26 05:25:53] Load weight end. type=MiniCPMSALAForCausalLM, dtype=torch.bfloat16, avail mem=3.90 GB, mem usage=17.94 GB.
+[2026-03-26 05:25:54] Using KV cache dtype: torch.bfloat16
+[2026-03-26 05:25:54] [MiniCPMHybridReqToTokenPool] Init: size=2, max_context_len=524292, kernel_size=32, kernel_stride=16
+[2026-03-26 05:25:54] Mamba Cache is allocated. max_mamba_cache_size: 2, conv_state size: 0.00GB, ssm_state size: 0.14GB 
+[2026-03-26 05:25:54] KV Cache is allocated. #tokens: 210401, K size: 0.80 GB, V size: 0.80 GB
+[2026-03-26 05:25:54] Memory pool end. avail mem=2.13 GB
+[2026-03-26 05:25:56] max_total_num_tokens=210401, chunked_prefill_size=512, max_prefill_tokens=16384, max_running_requests=2, context_len=524288, available_gpu_mem=1.35 GB
+[2026-03-26 05:25:56] INFO:     Started server process [25002]
+[2026-03-26 05:25:56] INFO:     Waiting for application startup.
+[2026-03-26 05:25:56] Using default chat sampling params from model generation config: {'repetition_penalty': 1.0, 'temperature': 1.0, 'top_k': 50, 'top_p': 1.0}
+[2026-03-26 05:25:57] Using default chat sampling params from model generation config: {'repetition_penalty': 1.0, 'temperature': 1.0, 'top_k': 50, 'top_p': 1.0}
+[2026-03-26 05:25:57] The server is fired up and ready to roll!
+[2026-03-26 05:25:57] INFO:     Application startup complete.
+[2026-03-26 05:25:57] INFO:     Uvicorn running on http://127.0.0.1:31111 (Press CTRL+C to quit)
