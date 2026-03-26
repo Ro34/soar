@@ -2,7 +2,7 @@
 set -e
 
 # Colab 环境下硬编码 sglang 仓库目录
-REPO_ROOT="/content/sglang"
+REPO_ROOT="/content/soar/sglang"
 DEPS_DIR="${REPO_ROOT}/3rdparty"
 
 export UV_INDEX_URL="https://pypi.org/simple"
