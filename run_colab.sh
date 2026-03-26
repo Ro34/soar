@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # 日志输出到文件（可通过环境变量覆盖）
-WORKSPACE_ROOT="/content"
+WORKSPACE_ROOT="/content/soar"
 LOG_DIR="${LOG_DIR:-${WORKSPACE_ROOT}/logs}"
 mkdir -p "${LOG_DIR}"
 LOG_FILE="${LOG_FILE:-${LOG_DIR}/run_colab_$(date +%Y%m%d_%H%M%S).log}"
@@ -16,7 +16,7 @@ echo "日志写入：${LOG_FILE}"
 # ---------------------------
 # 路径配置区 (适配 Colab)
 # ---------------------------
-WORKSPACE_ROOT="/content"
+WORKSPACE_ROOT="/content/soar"
 REPO_DIR="${WORKSPACE_ROOT}/sglang"
 
 # 强烈建议在 Colab 中挂载 Google Drive 并将模型存入 Drive
