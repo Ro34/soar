@@ -3,7 +3,7 @@ set -euo pipefail
 
 # 日志输出到文件（可通过环境变量覆盖）
 WORKSPACE_ROOT="/content/soar"
-LOG_DIR="${LOG_DIR:-${WORKSPACE_ROOT}/logs}"
+LOG_DIR="${LOG_DIR:-/content/log}"
 mkdir -p "${LOG_DIR}"
 LOG_FILE="${LOG_FILE:-${LOG_DIR}/run_colab_$(date +%Y%m%d_%H%M%S).log}"
 exec > >(tee -a "${LOG_FILE}") 2>&1
