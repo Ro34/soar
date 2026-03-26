@@ -31,6 +31,7 @@ echo "[1/4] Installing sglang..."
 uv pip install --system "cmake>=3.26"
 uv pip install --system --upgrade pip setuptools wheel
 uv pip install --system -e "${REPO_ROOT}/python"
+uv pip install --system "protobuf<6"
 
 # 动态获取 Python 包路径
 SITE_PACKAGES=$(python -c "import site; print(site.getsitepackages()[0])")
